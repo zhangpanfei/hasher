@@ -1,0 +1,18 @@
+{
+    "name": "zpfei/hasher",
+    "description": "This is a rsa encode and decode package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zpfei",
+            "email": "zpfeiv@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "zpfei\\hash\\": "src/"
+        }
+    }
+}
