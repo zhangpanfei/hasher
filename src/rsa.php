@@ -1,5 +1,15 @@
 <?php
-namespace zpfei\hash;
+namespace zpfei\hasher;
+
+/** **********Example****************
+	use zpfei\hasher\Rsa;
+	
+	$rsa = new Rsa(1024);
+	$keys = $rsa->createKeys();
+	$encode = Rsa::encode($keys['publicKey'],'hello word');
+
+	echo Rsa::decode($keys['privateKey'],$encode);
+***********************************/
 
 class Rsa
 {
@@ -78,13 +88,3 @@ class Rsa
 	}
 
 }
-
-/** Example
-
-$rsa = new Rsa(1024);
-$keys = $rsa->createKeys();
-$encode = Rsa::encode($keys['publicKey'],'你好');
-
-echo Rsa::decode($keys['privateKey'],$encode);
-
-**/
